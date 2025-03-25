@@ -1,19 +1,28 @@
-/* Style dasar */
 body {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
-/* Header */
+.logo a {
+    font-size: 50px;
+    font-weight:800;
+    float: left;
+    font-family: courier ;
+}
+
 header {
-    background-color: #2c3e50;
+    background-color: #211C84;
     color: white;
     padding: 20px;
 }
 
+ul{
+    text-align: left;
+    list-style-type: square;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,50 +39,75 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Section */
 section {
     padding: 40px;
     text-align: center;
 }
 
 #tentang {
-    background: #f4f4f4; /* Warna latar belakang */
+    background-color: white;
     padding: 20px;
-    width: 100%; /* Membuat box full lebar */
-    box-sizing: border-box; /* Pastikan padding tidak menambah ukuran */
-    border-left: 5px solid #007BFF; /* Garis dekoratif di kiri */
-    text-align: left; /* Teks rata kiri */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 5px solid blue;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba (0, 0, 0, 0.1);
 }
 
 #tentang h2 {
     margin-bottom: 10px; /* Jarak bawah judul */
 }
 
-
 #kursus {
-    background: #ffffff;
+    background: #B5A8D5;
 }
 
 #kontak {
     background: #f4f4f4;
 }
 
-/* Form Kontak */
-form {
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: justify;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+form{
     max-width: 400px;
     margin: auto;
     text-align: left;
 }
 
-label, input, textarea {
+
+label,input,textarea{
     display: block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-button {
-    background: #007BFF;
+
+button{
+    background: rgb(60, 60, 237);
     color: white;
     padding: 10px;
     border: none;
@@ -81,37 +115,12 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: blue;
 }
 
-
-/* Style kursus */
-.courses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.course-card {
-    background: white;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-}
-
-.course-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Tombol */
 .btn {
     display: inline-block;
-    background: #27ae60;
+    background: #7A73D1;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -122,27 +131,22 @@ button:hover {
 }
 
 .btn:hover {
-    background: #2ecc71;
+ background-color: blue ;
 }
 
-/* Style halaman detail */
-.course-detail {
+.detail {
     background: white;
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
 }
 
-ul {
-    text-align: left;
-    list-style-type: square;
-}
 
-/* Footer */
-footer {
-    background: #2c3e50;
+footer{
+    background: #211C84;
     color: white;
     padding: 10px;
     position: relative;
