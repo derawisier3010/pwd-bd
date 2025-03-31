@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+}
+
+header {
+    background-color: #BE5985;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white ;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Styling untuk section about */
+section {
+    background-color: #f4f4f4; /* Warna abu-abu terang untuk kontras */
+    padding: 40px;
+    border-radius: 10px; /* Membuat sudut lebih lembut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan agar lebih elegan */
+    max-width: 800px;
+    margin: 40px auto; /* Posisi tengah */
+    text-align: justify;
+}
+
+/* Styling untuk judul */
+h1 {
+    font-size: 26px;
+    color: #88304E; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.6; /* Jarak antar baris agar lebih nyaman dibaca */
+    color: #333;
+}
+
+
+
+/* Styling untuk gambar */
+img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+        display: block; /* Menghilangkan default inline behavior */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+/* Styling untuk daftar dengan bullet point tapi tetap menarik */
+ul {
+    list-style-type: disc; /* Bullet point bulat */
+    padding-left: 30px; /* Jarak dari sisi kiri */
+}
+
+ul li {
+    background: none; /* Menghapus background warna */
+    color: #333; /* Warna teks */
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: bold; /* Membuat teks sedikit tebal */
+    border-bottom: 1px solid #ddd; /* Garis bawah untuk tampilan lebih rapi */
+    transition: color 0.3s ease-in-out;
+    text-align: left;
+}
+
+footer{
+    background: #BE5985;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
