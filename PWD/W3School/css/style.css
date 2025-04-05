@@ -1,0 +1,47 @@
+/* 
+* {
+ cara untuk select all
+}
+*/
+
+p { /* panggil selector */
+    color: blue;
+}
+
+
+#para1 { /* panggil id */
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.center { /* panggil class */
+    text-align: center;
+}
+
+h1,h2,p {
+    background-color: aquamarine;
+}
+
+#h1 {
+    border: 2px solid red;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+#h2 {
+    border: 2px solid black;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px; /* untuk sudut supaya tdk lancip */
+    border: 2px solid red;
+   
+}
+
+
+
+
+
+
+
