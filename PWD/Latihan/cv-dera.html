@@ -4,39 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Dera Wisier</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 2px;
+            padding: 10px 15px; /*bikin box*/ 
+        }
+
+        nav ul li a:hover {
+            background-color: blue;
+        }
+
+        section {
+            background-color: antiquewhite;
+        }
+
+        .box {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 12px; /*jarak box ke tulisan */
+            margin: 20px; /*jarak antar box */
+        }
+
+        #graphic {
+            text-align: center;
+        }
+
+    img {
+
+        width: 500;
+        height: 200px;
+        display: block;
+        border: 2px solid white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       
+    h1 {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    </style>
 </head>
 <body>
-    <h1>Dera Wisier</h1>
-    <p>Graphic Designer</p>
 
+<nav>
+    <ul>
+        <li><a href="#about">Tentang</a></li> 
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+    </ul>
+</nav>
+    
+    <section id="about" class="box">
+    <img src="cv.jpg" alt="profile">
+    <h1>Dera Wisier</h1>
+    <p id="graphic">Graphic Designer</p>
     <h2>Tentang Saya</h2>
     <p>Sebagai fresh grad dari jurusan Teknik Komputer Jaringan, saya memiliki dasar yang kuat dalam merancang dan mengimplementasikan solusi teknologi yang efisien. Saya sedang mencari kesempatan untuk terjun ke dunia UI/UX Design. Meskipun belum memiliki pengalaman kerja, saya telah mempersiapkan diri dengan pengetahuan praktis yang diperlukan untuk masuk ke ranah profesional Design grafis. Ambisi saya adalah menciptakan desain yang bukan hanya indah tapi juga user-friendly disetiap proyek yang saya ambil, dan berkontribusi secara signifikan dalam tim yang berfokus pada inovasi dan kinerja.</p>
-
+</section>
+    
+<section id="pendidikan" class="box">
     <h2>Pendidikan</h2>
     <ul>
         <li>SMK Kristen IMMANUEL Pontianak - Teknik Komputer dan Jaringan</li>
     </ul>
+</section>
 
+<section id="pengalaman" class="box">
     <h2>Pengalaman Magang</h2>
     <ul>
         <li>Support admin bidang IT di SDK Calvary</li>
     </ul>
-
+</section>
+    
+<section id="keahlian" class="box">
     <h2>Keahlian</h2>
     <ul>
         <li>Design grafis</li>
         <li>3D Design</li>
         <li>UI/UX Design</li>
     </ul>
+</section>
 
+<section id="kontak" class="box">
     <h2>Kontak</h2>
     <p>Email: derawisier3010@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/dera-wisier-57a54120a/?originalSubdomain=id">derawisier</a></p>
-    <p>GitHub: <a href="https://github.com/derawisier3010">derawisier3010</a></p>
-
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dera-wisier-57a54120a/?originalSubdomain=id" target="_blank">derawisier</a></p>
+    <p>GitHub: <a href="https://github.com/derawisier3010" target="_blank">derawisier3010</a></p>
+</section>
+    
+<section id="portofolio" class="box">
     <h2>Portofolio Saya</h2>
     <p>Klik disini untuk melihat Portofolio saya</p>
-    <a href="https://drive.google.com/drive/folders/1-bozb-yaKVLvb9UOegVnlxmWsB-8CoTY?usp=drive_link">Portofolio</a>
+    <a href="https://drive.google.com/drive/folders/1-bozb-yaKVLvb9UOegVnlxmWsB-8CoTY?usp=drive_link" target="_blank">Portofolio</a>
+</section>
 
 </body>
 </html>
