@@ -1,17 +1,19 @@
-/* 
 * {
- cara untuk select all
+max-width: 2000px; /* maksimal lebar konten menyesuaikan layar device*/
 }
-*/
+
 
 p { /* panggil selector */
     color: blue;
+    margin-left: 20px; /* margin untuk jarak antar web */
+    margin-right: 20px;
 }
 
 
 #para1 { /* panggil id */
     font-weight: bold;
     font-size: 130%;
+    box-sizing: border-box;
 }
 
 .center { /* panggil class */
@@ -37,8 +39,31 @@ img {
     border-radius: 10px; /* untuk sudut supaya tdk lancip */
     border: 2px solid red;
    
+   
 }
 
+.padding {
+    width: 300px; /*lebar elemen*/
+    padding: 25px; /*jarak antar dalam elemen*/
+    box-sizing: border-box;
+    background-color: black;
+    padding: 20px 50px 60px 30px;
+}
+
+/* top
+right
+bottom
+lrft */
+
+.boxmodel {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray ;
+    margin: 0;
+    
+    text-align-last: center; /* baris terakhir akan center */
+}
 
 
 
