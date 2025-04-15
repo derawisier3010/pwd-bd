@@ -3,33 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan CSS</title>
+    <title>Latihan css</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="h1" class="center">Bagian Pertama</h1>
-        <h2 id="h2" class="center">Bagian Kedua</h2>
-    </header>
+<header>
+    <h1>Materi CSS-W3School </h1>
+</header>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, consequuntur similique? Accusantium minima corrupti totam architecto sit nostrum quas ipsum perferendis ab aliquid quidem laborum, non explicabo vero. Accusamus, doloremque.</p>
-    <p id="para1" class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem recusandae a quaerat? Recusandae autem dolorum sit necessitatibus commodi facilis qui maxime fugit adipisci aliquid debitis consequuntur eum, voluptate sequi animi.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi adipisci quis vero quaerat natus, delectus voluptatem, nostrum voluptate perspiciatis cupiditate laboriosam. Consequuntur quibusdam voluptates facilis, repellendus molestiae tempora vel provident?</p>
+<main>
+<div>
+    <h2>Apa itu CSS</h2>
+    <P>CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan elemen HTML. CSS memisahkan konten dari desain visual</P>
+</div>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIgeNMCNPYVXDAuOitPhns5f4_2u4cEyu5pQ&s" alt="ayam">
+<div>
+    <h2>Selector CSS</h2>
+    <p>Selector digunakan untuk memilih elemen HTML yang ingin diberi gaya.</p>
+    <ul>
+      <li><strong>Element Selector</strong>: <code>p { color: red; }</code></li>
+      <li><strong>Class Selector</strong>: <code>.judul { font-size: 20px; }</code></li>
+      <li><strong>ID Selector</strong>: <code>#header { background-color: blue; }</code></li>
+    </ul>
+</div>
 
-    <div class="padding">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, iste? Commodi fuga ea sint quo omnis rerum repellat impedit provident nihil libero laudantium esse magni tempore, eos pariatur atque quam!</p>
+<div>
+        <h2>Properti Umum CSS</h2>
+        <ul>
+          <li><code>color</code>: Warna teks</li>
+          <li><code>background-color</code>: Warna latar</li>
+          <li><code>font-size</code>: Ukuran huruf</li>
+          <li><code>margin</code>: Jarak luar elemen</li>
+          <li><code>padding</code>: Jarak dalam elemen</li>
+          <li><code>border</code>: Garis tepi elemen</li>
+        </ul>
+</div>
+
+<div>
+        <h2>Box Model</h2>
+        <p>Setiap elemen HTML dapat dianggap sebagai kotak yang terdiri dari: <strong>margin</strong>, <strong>border</strong>, <strong>padding</strong>, dan <strong>content</strong>.</p>
+</div>
+
+<div>
+    <h2>Positioning</h2>
+    <ul>
+          <li><code>static</code> (default)</li>
+          <p>Posisi elemen mengikuti alur normal dokumen</p>
+          <li><code>relative</code></li>
+          <p>Elemen tetap pada posisi aslinya, tapi bisa digeser</p>
+          <li><code>absolute</code></li>
+          <p>Elemen keluar dari flow normal dan menempel ke elemen terdekat</p>
+          <li><code>fixed</code></li>
+          <p>Posisi tetap terhadap layar (viewport), tidak bergerak saat discroll</p>
+          <li><code>sticky</code></li>
+          <p>Gabungan antara relative dan fixed</p>
+        </ul>
+        <h3>Contoh Penerapan Positioning</h3>
+        <img src="positioningdemo.jpg" alt="contoh positioning">
     </div>
 
-    <div class="boxmodel">
-        <h1>contoh box model</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, rem, suscipit eum ad animi necessitatibus porro quasi fugiat explicabo corrupti inventore sapiente optio eius nisi maiores atque odit voluptas nostrum?</p>
+    <div>
+            <h2>Margins</h2>
+            <p>Memberi jarak luar elemen. Bisa menggunakan nilai tunggal atau shorthand (top, right, bottom, left).</p>
     </div>
+
+    <div>
+        <h2>Padding</h2>
+        <p>CSS memiliki properti untuk menentukan padding untuk setiap sisi elemen:</p>
+        <ul>
+            <li>padding-top</li>
+            <li>padding-right</li>
+            <li>padding-bottom</li>
+            <li>padding-left</li>
+        </ul>
+    </div>
+
+    <div>
+            <h2>CSS Links</h2>
+            <p>Mengatur tampilan link: normal, hover, visited, active.</p>
+            <ul>
+                <li><code>a:link</code> - tautan normal yang belum dikunjungi </li>
+                <li><code>a:hover</code> - tautan saat pengguna mengarahkan mouse ke atasnya </li>
+                <li><code>a:visited</code> - tautan yang telah dikunjungi pengguna </li>
+                <li><code>a:active</code> - tautan saat diklik </li>
+            </ul>
+            
+    </div>
+
+    <div>
+        <h2>Display & Visibility</h2>
+        <ul>
+          <li><code>display: block | inline | inline-block | none</code></li>
+          <ul>
+            <li><strong>Block : </strong> Elemen mengisi <b>lebar penuh</b> dari parent-nya</li>
+            <li><strong>Inline : </strong> Elemen tidak memulai baris baru dan hanya sebesar kontennya</li>
+            <li><strong>Inline-Block : </strong> Tampil sebaris, tapi bisa diatur width, height</li>
+            <li><strong>None : </strong> Elemen tidak ditampilkan sama sekali</li>
+          </ul>
+          <li><code>visibility: visible | hidden</code></li>
+        </ul>
+    </div>
+    
+        <div>
+            <h2>Flexbox</h2>
+            <p>Digunakan untuk membuat layout yang fleksibel.</p>
+            <p>Mengubah elemen menjadi flex container.</p>
+            <pre><code>display: flex;
+      justify-content: center;
+      align-items: center;</code></pre>
+
+    </div>
+   
+       <div>
+            <h2>Media Queries</h2>
+            <p>Digunakan untuk membuat desain responsif berdasarkan ukuran layar.</p>
+            <pre><code>@media (max-width: 600px) {
+        body {
+          background-color: lightgray;
+        }
+      }</code></pre>
+    </div>
+</main> 
 </body>
 </html>
-
-<!-- fonts-->
-
-
-
