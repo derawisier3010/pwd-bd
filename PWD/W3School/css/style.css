@@ -1,72 +1,44 @@
-* {
-max-width: 2000px; /* maksimal lebar konten menyesuaikan layar device*/
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
 }
 
-
-p { /* panggil selector */
-    color: blue;
-    margin-left: 20px; /* margin untuk jarak antar web */
-    margin-right: 20px;
-}
-
-
-#para1 { /* panggil id */
-    font-weight: bold;
-    font-size: 130%;
-    box-sizing: border-box;
-}
-
-.center { /* panggil class */
+header {
+    background-color: #4682b4;
+    color: white;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
-h1,h2,p {
-    background-color: aquamarine;
+main {
+    padding: 2rem;
 }
 
-#h1 {
-    border: 2px solid red;
-    background-color: rgba(255, 99, 71, 0.5);
-}
-
-#h2 {
-    border: 2px solid black;
+div {
+    margin-bottom: 2rem;
 }
 
 img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px; /* untuk sudut supaya tdk lancip */
-    border: 2px solid red;
-   
-   
+    width: 1000px;
 }
 
-.padding {
-    width: 300px; /*lebar elemen*/
-    padding: 25px; /*jarak antar dalam elemen*/
-    box-sizing: border-box;
-    background-color: black;
-    padding: 20px 50px 60px 30px;
+h2 {
+    color: #333;
 }
 
-/* top
-right
-bottom
-lrft */
-
-.boxmodel {
-    width: 320px;
-    height: 50px;
-    padding: 10px;
-    border: 5px solid gray ;
-    margin: 0;
-    
-    text-align-last: center; /* baris terakhir akan center */
+code {
+    background-color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
-
-
-
-
-
+pre{
+    background-color: #e8f4fc;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+}
