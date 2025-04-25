@@ -1,0 +1,32 @@
+linear-gradient:
+
+* Arah Horizontal & Vertikal
+to right → dari kiri ke kanan
+
+to left → dari kanan ke kiri
+
+to bottom → dari atas ke bawah
+
+to top → dari bawah ke atas
+
+*Arah Diagonal
+to top right → dari bawah kiri ke atas kanan
+
+to top left → dari bawah kanan ke atas kiri
+
+to bottom right → dari atas kiri ke bawah kanan
+
+to bottom left → dari atas kanan ke bawah kiri
+
+Linear gradient:
+background: linear-gradient(to right, red, blue);
+
+Radial Gradient: gradasi dari tengah ke luar (membentuk lingkaran atau oval).
+background: radial-gradient(circle, red, yellow, green);
+
+Conic Gradient: Gradasi memutar seperti roda warna / pie chart.
+background: conic-gradient(from 0deg, red, yellow, green, red);
+
+Repeating Gradients: diulang-ulang (repeat)
+background: repeating-linear-gradient(to right, red, yellow 10px, red 20px);
+
