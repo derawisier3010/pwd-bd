@@ -10,9 +10,11 @@
 <body>
   <header>
     <img src="logo.png">
-    <h1>Temukan Karier Impianmu</h1>
+    <h1 id="nama">Temukan Karir Impianmu</h1> 
     <p>Buat resume profesional, cari pekerjaan, dan kelola aplikasi Anda – semuanya dalam satu platform.</p>
-    <button class="btn-primary">Mulai Sekarang</button>
+   <button id="btnGabung" class="btn-primary" type="button" onclick="mulai()" 
+        onmouseover="ubahTeks()" 
+        onmouseout="kembalikanTeks()">Mulai Sekarang</button>
   </header>
 
   <section class="steps">
@@ -64,5 +66,39 @@
 </html>
 
 <script>
+function mulai(){
+window.alert(' Selamat datang di jobSeekr! silahkan daftar untuk mulai ');
+}
 
+// const nama = prompt("Masukkan nama Anda: ");
+// document.getElementById("nama").innerHTML = `Halo ${nama}`;
+
+
+function ubahTeks() {
+  document.getElementById("btnGabung").innerHTML = "Ayo Gabung!";
+}
+
+function kembalikanTeks() {
+  document.getElementById("btnGabung").innerHTML = "Mulai Sekarang";
+}
+
+// const btn = document.querySelector('.btn-primary');
+// btn.addEventListener('mouseover', () => {
+//   btn.innerText = 'Ayo Gabung!';
+// });
+// btn.addEventListener('mouseout', () => {
+//   btn.innerText = 'Gabung Gratis';
+// });
+
+
+const estDiv = document.createElement("div");
+estDiv.innerHTML = '<button class="btn-primary" id="cekPeluang">Cek</button><p id="hasilPeluang"></p>';
+document.querySelector(".cta").appendChild(estDiv);
+
+document.getElementById("cekPeluang").onclick = () => {
+  const nilai = Math.floor(Math.random() * 51) + 50;
+  document.getElementById("hasilPeluang").innerText = `Peluang Anda: ${nilai}%`;
+};
+
+// bikin 2 input type
 </script>
