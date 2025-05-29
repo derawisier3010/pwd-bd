@@ -57,8 +57,16 @@
     <h2>Wujudkan Masa Depan Profesional Anda</h2>
     <p>Bergabunglah dengan komunitas global pencari kerja dan buka peluang karier yang lebih luas hari ini.</p>
     <button class="btn-primary">Gabung Gratis</button>
+
+    <h1>Estimasi Peluang Kerja</h1>
+    <input type="text" id="pekerjaan" placeholder="Pekerjaan yang diinginkan">
+    <input type="text" id="tahun" placeholder="Tahun Pengalaman">
+    <button id="cekPeluang">cek</button>
+    <p id="hasilPeluang"></p>
   </section>
 
+ 
+  
   <footer>
     <p>&copy; 2025 JobSeekr</p>
   </footer>
@@ -80,7 +88,7 @@ function ubahTeks() {
 
 function kembalikanTeks() {
   document.getElementById("btnGabung").innerHTML = "Mulai Sekarang";
-}
+} //supaya buttonnya berubah
 
 // const btn = document.querySelector('.btn-primary');
 // btn.addEventListener('mouseover', () => {
@@ -91,14 +99,10 @@ function kembalikanTeks() {
 // });
 
 
-const estDiv = document.createElement("div");
-estDiv.innerHTML = '<button class="btn-primary" id="cekPeluang">Cek</button><p id="hasilPeluang"></p>';
-document.querySelector(".cta").appendChild(estDiv);
-
 document.getElementById("cekPeluang").onclick = () => {
+  const pekerjaan = document.getElementById("pekerjaan").value;
   const nilai = Math.floor(Math.random() * 51) + 50;
-  document.getElementById("hasilPeluang").innerText = `Peluang Anda: ${nilai}%`;
+  document.getElementById("hasilPeluang").innerText = `Peluang Anda Menjadi ${pekerjaan} adalah: ${nilai}%`;
 };
 
-// bikin 2 input type
 </script>

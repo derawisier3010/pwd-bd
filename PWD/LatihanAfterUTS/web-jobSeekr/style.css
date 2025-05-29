@@ -139,8 +139,6 @@ section {
   }
 
 
-
-
   .review h4 {
     color: var(--blue-main);
     font-size: 1rem;
@@ -159,11 +157,13 @@ section {
   .cta p {
     padding: 0;
     margin-top: 5px;
+    
   }
 
   .cta btn-primary {
     margin-top: 5px;
   }
+
 
   footer {
     background-color: var(--blue-main);
