@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nama" onkeyup="dera()">
+    <button type="button" onclick="dera()" id="btn_tampil">Tampil</button>
+
+    <div id="tampil_data"></div>
+    <button type="button" value="pink" onclick="ratna(this.value)">pink</button>
+    <button type="button" value="green" onclick="ratna(this.value)">green</button>
+    <button type="button" value="blue" onclick="ratna(this.value)">blue</button>
+    <button type="button" value="yellow" onclick="ratna(this.value)">yellow</button>
+</body>
+</html>
+
+<script>
+    function dera()
+    {
+        var nama = document.getElementById("nama").value;
+        //alert("hello " + nama + "!");
+        document.getElementById("tampil_data").innerHTML = nama;
+    }
+
+    function ratna(warna)
+    {
+        document.getElementById("btn_tampil").style.backgroundColor = warna;
+    }
+</script>
